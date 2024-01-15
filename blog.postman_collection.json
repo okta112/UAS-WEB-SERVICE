@@ -1,0 +1,1863 @@
+{
+	"info": {
+		"_postman_id": "2c0d6947-a3bb-46d0-a918-21f289fdda1f",
+		"name": "blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "15477491"
+	},
+	"item": [
+		{
+			"name": "article",
+			"item": [
+				{
+					"name": "localhost:8000/api/article/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/article/1"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/article/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/article/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:29:45 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:29:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Detail Article!\",\n    \"data\": [\n        {\n            \"article_id\": 1,\n            \"user_id\": 1,\n            \"article_title\": \"Article 1 Edit\",\n            \"article_description\": \"Description Article 1\",\n            \"category_id\": 1,\n            \"tag_id\": 1,\n            \"created_at\": \"2024-01-15T03:22:31.000000Z\",\n            \"updated_at\": \"2024-01-15T03:23:59.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/article/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/article/2"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/article/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/article/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:29:21 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:29:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Article Berhasil Dihapus!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/article",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjk0MjQwLCJleHAiOjE3MDUyOTc4NDAsIm5iZiI6MTcwNTI5NDI0MCwianRpIjoiMkpqNHo0aTg1bk51OFpyeiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.PNewtubrXCc9lmFeiFJ8DkLOcQXM2yiZMsijl9MKpCs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "article_title",
+									"value": "Article 22",
+									"type": "text"
+								},
+								{
+									"key": "article_description",
+									"value": "Description Article 22",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tag_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/article"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/article",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "article_title",
+											"value": "Article 2",
+											"type": "text"
+										},
+										{
+											"key": "article_description",
+											"value": "Description Article 2",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "tag_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/article"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:25:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:25:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Article Berhasil Disimpan!\",\n    \"data\": {\n        \"user_id\": 1,\n        \"article_title\": \"Article 2\",\n        \"article_description\": \"Description Article 2\",\n        \"category_id\": \"1\",\n        \"tag_id\": \"1\",\n        \"updated_at\": \"2024-01-15T03:25:20.000000Z\",\n        \"created_at\": \"2024-01-15T03:25:20.000000Z\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/article/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "article_title",
+									"value": "Article 1 Edit",
+									"type": "text"
+								},
+								{
+									"key": "article_description",
+									"value": "Description Article 1",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tag_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/article/1"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/article/1",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "article_title",
+											"value": "Article 1 Edit",
+											"type": "text"
+										},
+										{
+											"key": "article_description",
+											"value": "Description Article 1",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "tag_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/article/1"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:23:59 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:23:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Article Berhasil Diupdate!\",\n    \"data\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/article",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/article"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/article",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg4Mjk4LCJleHAiOjE3MDUyOTE4OTgsIm5iZiI6MTcwNTI4ODI5OCwianRpIjoic1lLWnRzWmRXSlZFdkJyOCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RoMU0z_vEf-hElTSPWSGbAstpE3gyToL112pasm3eg4",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/article"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:23:15 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 03:23:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"List article\",\n    \"data\": [\n        {\n            \"article_id\": 1,\n            \"user_id\": 1,\n            \"article_title\": \"Article 1\",\n            \"article_description\": \"Description Article 1\",\n            \"category_name\": \"Finance\",\n            \"category_id\": 1,\n            \"tag_id\": 1\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "tag",
+			"item": [
+				{
+					"name": "localhost:8000/api/tag/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/tag/2"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/tag/{id}",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/tag/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:46:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:46:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Detail Tag!\",\n    \"data\": [\n        {\n            \"tag_id\": 2,\n            \"tag_name\": \"react js\",\n            \"created_at\": \"2024-01-15T02:46:05.000000Z\",\n            \"updated_at\": \"2024-01-15T02:46:05.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/tag/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/tag/2"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/tag/{id}",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/tag/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:47:39 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:47:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Tag Berhasil Dihapus!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/tag",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tag_name",
+									"value": "react js",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/tag"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/tag",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "tag_name",
+											"value": "react js",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/tag"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:46:05 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:46:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Tag Berhasil Disimpan!\",\n    \"data\": {\n        \"tag_name\": \"react js\",\n        \"updated_at\": \"2024-01-15T02:46:05.000000Z\",\n        \"created_at\": \"2024-01-15T02:46:05.000000Z\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/tag/2",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tag_name",
+									"value": "React JS",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/tag/2"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/tag/2",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "tag_name",
+											"value": "React JS",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/tag/2"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:47:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:47:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Tag Berhasil Diupdate!\",\n    \"data\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/tag",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/tag"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/tag",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1Mjg2NjkyLCJleHAiOjE3MDUyOTAyOTIsIm5iZiI6MTcwNTI4NjY5MiwianRpIjoiSzBaZVdxM0Z5MDQ2ZGt0VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Ym1Y6OdceHECDCmcCFpd-7jLIvmkSBovPNeolsAS9Uw",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/tag"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:46:43 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 02:46:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"List Tag\",\n    \"data\": [\n        {\n            \"tag_id\": 1,\n            \"tag_name\": \"programming\",\n            \"created_at\": \"2024-01-15T02:45:50.000000Z\",\n            \"updated_at\": \"2024-01-15T02:45:50.000000Z\"\n        },\n        {\n            \"tag_id\": 2,\n            \"tag_name\": \"react js\",\n            \"created_at\": \"2024-01-15T02:46:05.000000Z\",\n            \"updated_at\": \"2024-01-15T02:46:05.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "notification",
+			"item": [
+				{
+					"name": "localhost:8000/api/notification/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MTk4NDIxLCJleHAiOjE3MDUyMDIwMjEsIm5iZiI6MTcwNTE5ODQyMSwianRpIjoidWZpTXZFd2kwWW56c1o0cCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pJx7ucc7hcRDscBW1MRdYU_P6-45tMz9YLKxyPJZvzY",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/notification/1"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/notification/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MTk4NDIxLCJleHAiOjE3MDUyMDIwMjEsIm5iZiI6MTcwNTE5ODQyMSwianRpIjoidWZpTXZFd2kwWW56c1o0cCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pJx7ucc7hcRDscBW1MRdYU_P6-45tMz9YLKxyPJZvzY",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/notification/2"
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8000/api/notification",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MTk4NDIxLCJleHAiOjE3MDUyMDIwMjEsIm5iZiI6MTcwNTE5ODQyMSwianRpIjoidWZpTXZFd2kwWW56c1o0cCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.pJx7ucc7hcRDscBW1MRdYU_P6-45tMz9YLKxyPJZvzY",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/notification"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "localhost:8000/api/category/1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "localhost:8000/api/category/1"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category/1",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:8000/api/category/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:22:44 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:22:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Detail Category!\",\n    \"data\": [\n        {\n            \"category_id\": 1,\n            \"category_name\": \"Health\",\n            \"created_at\": \"2024-01-15T01:16:35.000000Z\",\n            \"updated_at\": \"2024-01-15T01:16:35.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category/2",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "localhost:8000/api/category/2"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category/2",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:8000/api/category/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:23:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:23:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category Berhasil Dihapus!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_name",
+									"value": "Health",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/category"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category_name",
+											"value": "Health",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/category"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:20:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:20:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category Berhasil Disimpan!\",\n    \"data\": {\n        \"category_name\": \"Health\",\n        \"updated_at\": \"2024-01-15T01:20:40.000000Z\",\n        \"created_at\": \"2024-01-15T01:20:40.000000Z\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category/1",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_name",
+									"value": "Finance",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/category/1"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category/1",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "category_name",
+											"value": "Finance",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/category/1"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:26:52 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:26:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Category Berhasil Diupdate!\",\n    \"data\": 1\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+								"type": "text"
+							}
+						],
+						"url": "localhost:8000/api/category"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgxMzYxLCJleHAiOjE3MDUyODQ5NjEsIm5iZiI6MTcwNTI4MTM2MSwianRpIjoiWlBWd3VZNERNY3ZUQmFnVCIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2NrPSNibS78P7FKbhwaG-f0E-st37P-CLZm4SzyMXFY",
+										"type": "text"
+									}
+								],
+								"url": "localhost:8000/api/category"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:21:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:21:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"List Category\",\n    \"data\": [\n        {\n            \"category_id\": 1,\n            \"category_name\": \"Health\",\n            \"created_at\": \"2024-01-15T01:16:35.000000Z\",\n            \"updated_at\": \"2024-01-15T01:16:35.000000Z\"\n        },\n        {\n            \"category_id\": 2,\n            \"category_name\": \"Health\",\n            \"created_at\": \"2024-01-15T01:20:40.000000Z\",\n            \"updated_at\": \"2024-01-15T01:20:40.000000Z\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "localhost:8000/api/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "steve@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/login"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "johndoe@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:54:12 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:54:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MDc0ODUyLCJleHAiOjE3MDUwNzg0NTIsIm5iZiI6MTcwNTA3NDg1MiwianRpIjoiaFZ3UmZKcWJoUW51RFIxRSIsInN1YiI6IjE2IiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.gn0fiw37eokYL84RD36O2oLpV6TpO31I4zgT1uUt30w\",\n    \"token_type\": \"bearer\",\n    \"user\": {\n        \"user_id\": 16,\n        \"name\": \"Jhon Doe\",\n        \"email\": \"johndoe@gmail.com\",\n        \"password\": \"$2y$12$h.RCsJzhnpokKbo.Ad//yOWr008R8X27rHnrEiB59bw5KGKdM3Amy\",\n        \"created_at\": \"2024-01-12T15:52:26.000000Z\",\n        \"updated_at\": \"2024-01-12T15:52:26.000000Z\"\n    },\n    \"expires_in\": 86400\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/user-profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgwNzM5LCJleHAiOjE3MDUyODQzMzksIm5iZiI6MTcwNTI4MDczOSwianRpIjoiSTVYVGpadUgzM3dnZDA2VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RPA6EMnMeF7l9d3LtlooxebHaoik9GdZ4pE3q3voIRQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "localhost:8000/api/user-profile"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/user-profile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzA1MjgwNzM5LCJleHAiOjE3MDUyODQzMzksIm5iZiI6MTcwNTI4MDczOSwianRpIjoiSTVYVGpadUgzM3dnZDA2VyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.RPA6EMnMeF7l9d3LtlooxebHaoik9GdZ4pE3q3voIRQ",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": []
+								},
+								"url": "localhost:8000/api/user-profile"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:06:43 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 15 Jan 2024 01:06:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user_id\": 1,\n    \"name\": \"Jhon Doe\",\n    \"email\": \"johndoe@gmail.com\",\n    \"password\": \"$2y$12$64jfPUSq1DJNQU97Aq13fOcoswd0Kp7ofMHsiDfgLGZ6g0OMtGzZq\",\n    \"created_at\": \"2024-01-15T01:04:12.000000Z\",\n    \"updated_at\": \"2024-01-15T01:04:12.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "localhost:8000/api/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jhon Doe",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "johndoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "localhost:8000/api/register"
+					},
+					"response": [
+						{
+							"name": "localhost:8000/api/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Jhon Doe",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "johndoe@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": "localhost:8000/api/register"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:52:26 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 12 Jan 2024 15:52:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "86400"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, Authorization, X-Requested-With"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Registrasi Berhasil Disimpan!\",\n    \"data\": {\n        \"name\": \"Jhon Doe\",\n        \"email\": \"johndoe@gmail.com\",\n        \"password\": \"$2y$12$h.RCsJzhnpokKbo.Ad//yOWr008R8X27rHnrEiB59bw5KGKdM3Amy\",\n        \"updated_at\": \"2024-01-12T15:52:26.000000Z\",\n        \"created_at\": \"2024-01-12T15:52:26.000000Z\",\n        \"user_id\": 16\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
